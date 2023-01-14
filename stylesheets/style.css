@@ -77,7 +77,6 @@
 }
 
 @keyframes changeBg {
-
   0%,
   100% {
     background-image: url("../images/main/Banner_3.jpg");
@@ -97,7 +96,7 @@
 }
 
 /* media queries */
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   .header-pri {
     height: 600px;
   }
@@ -117,7 +116,6 @@
   }
 
   @keyframes changeBgMv {
-
     0%,
     100% {
       background-image: url("../images/main/mobile_banner_3.jpg");
@@ -741,7 +739,6 @@
   top: 400px;
   margin-top: 90px;
   margin-left: 70px;
-
 }
 
 /* media queries */
@@ -835,7 +832,7 @@
   border: none;
 }
 
-.box-1 .read-more-btn {
+/* .box-1 .read-more-btn {
   margin-top: 5.2vw;
 }
 
@@ -857,7 +854,7 @@
 
 .box-6 .read-more-btn {
   margin-top: 5.3vw;
-}
+} */
 
 .read-more-btn a {
   position: absolute;
@@ -870,12 +867,12 @@
   font-size: 0.9vw;
 }
 
-.read-more-btn a:hover {
+/* .read-more-btn a:hover {
   color: black;
   text-decoration: none;
-}
+} */
 
-.read-more-btn a::before {
+/* .read-more-btn a::before {
   content: "";
   position: absolute;
   display: block;
@@ -887,14 +884,14 @@
   background-color: black;
   transform: scaleX(0);
   transition: transform 0.3s ease;
-}
+} */
 
 .read-more-btn a:hover::before {
   transform: scaleX(1);
 }
 
 /* media queries */
-@media(min-width: 1281px) {
+@media (min-width: 1281px) {
   .what-we-do {
     margin-top: 18vw;
   }
@@ -915,6 +912,8 @@
   display: inline-block;
   display: none;
   margin-top: 120px;
+  position: relative;
+  z-index: 99;
 }
 
 .title-tv {
@@ -981,7 +980,7 @@
 
 .box-tv h1 {
   font-family: "Yantramanav", sans-serif;
-  font-size: 5vw;
+  font-size: 3.5vw;
 }
 
 .box-tv p {
@@ -1002,7 +1001,7 @@
   height: 48vw;
 }
 
-.row-2-tv .box-3-tv .read-more-btn-tv {
+/* .row-2-tv .box-3-tv .read-more-btn-tv {
   margin-top: 11vw;
 }
 
@@ -1020,6 +1019,10 @@
 
 .box-6-tv .read-more-btn-tv {
   margin-top: 12.5vw;
+} */
+
+.box-4-tv .read-more-btn-tv {
+  margin-top: 20px;
 }
 
 .read-more-btn-tv a {
@@ -1056,6 +1059,8 @@
   text-align: center;
   display: inline-block;
   display: none;
+  position: relative;
+  z-index: 99;
 }
 
 .title-mv {
@@ -1142,7 +1147,7 @@
 
 .box-mv h1 {
   font-family: "Yantramanav", sans-serif;
-  font-size: 8vw;
+  font-size: 7vw;
 }
 
 .box-mv p {
@@ -2460,7 +2465,7 @@ p {
   }
 }
 
-@media(max-width: 1190px) {
+@media (max-width: 1190px) {
   .footer {
     position: absolute;
     background-color: #151414;
@@ -2597,4 +2602,194 @@ p {
   cursor: pointer;
 }
 
+/* end */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* new */
+.what-we-do {
+  position: relative;
+  z-index: 99;
+}
+
+.header-pri {
+  animation: changeBg 12s infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 85px;
+  width: 100%;
+  height: 600px;
+  height: 48vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+@keyframes changeBg {
+  0%,
+  100% {
+    background-image: url("/images/new/banner.png");
+  }
+
+  75% {
+    background-image: url("/images/new/banner.png");
+  }
+
+  50% {
+    background-image: url("/images/new/banner.png");
+  }
+
+  25% {
+    background-image: url("/images/new/banner.png");
+  }
+}
+
+@media (max-width: 1000px) {
+  .header-pri {
+    height: 600px;
+  }
+}
+
+@media (max-width: 485px) {
+  .header-pri {
+    animation: changeBgMv 12s infinite;
+    background-repeat: no-repeat;
+    background-position-y: 55px;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-size: contain;
+  }
+
+  @keyframes changeBgMv {
+    0%,
+    100% {
+      background-image: url("/images/new/banner-mobile.jpg");
+    }
+
+    75% {
+      background-image: url("/images/new/banner-mobile.jpg");
+    }
+
+    50% {
+      background-image: url("/images/new/banner-mobile.jpg");
+    }
+
+    25% {
+      background-image: url("/images/new/banner-mobile.jpg");
+    }
+  }
+}
+
+.box h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 2vw;
+  line-height: 3.2vw;
+}
+
+.box p {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 1.1vw;
+  margin-top: 16px;
+  color: rgb(50, 50, 50);
+}
+
+.new-cct {
+  margin-left: 3.2%;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  height: 6vh;
+  padding: 10px;
+  padding-top: 13px;
+  font-style: italic;
+  background: hsla(40, 89%, 62%, 1);
+  background: linear-gradient(
+    360deg,
+    hsla(40, 89%, 62%, 1) 20%,
+    hsla(0, 0%, 100%, 1) 90%
+  );
+  background: -moz-linear-gradient(
+    360deg,
+    hsla(40, 89%, 62%, 1) 20%,
+    hsla(0, 0%, 100%, 1) 90%
+  );
+  background: -webkit-linear-gradient(
+    360deg,
+    hsla(40, 89%, 62%, 1) 20%,
+    hsla(0, 0%, 100%, 1) 90%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F4BC49", endColorstr="#FFFFFF", GradientType=1 );
+}
+
+.new-cct h1 {
+  font-size: 2vw;
+}
+
+.new-cct img {
+  padding-left: 10px;
+  width: 35px;
+}
+
+.row-1-tv .new-cct h1 {
+  font-size: 4vw;
+}
+
+.row-2-tv .new-cct h1 {
+  font-size: 4vw;
+}
+
+.row-3-tv .new-cct h1 {
+  font-size: 4vw;
+}
+
+.row-1-mv .new-cct h1 {
+  font-size: 6vw;
+}
+
+.row-4-mv .new-cct h1 {
+  font-size: 6vw;
+}
+
+.row-6-mv .new-cct h1 {
+  font-size: 6vw;
+}
+
+@media all and (min-width: 600px) {
+  .about-us-card {
+    overflow: scroll;
+  }
+
+  .about-us-card ul li {
+    display: inline-block;
+    list-style: none;
+  }
+
+  .about-us-card ul li img {
+    width: 150px;
+  }
+}
+
+.footer-container .our-services {
+  display: flex;
+  /* background-color: red; */
+}
+
+/* .footer-container .our-services h1 {
+  padding-left: 100px;
+} */
+
+.first-ul-footer {
+  margin-left: -250px;
+  margin-top: 50px;
+}
+
+.second-ul-footer {
+  margin-top: 50px;
+  margin-left: 50px;
+  line-height: 22px;
+}
 /* end */

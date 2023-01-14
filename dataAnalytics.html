@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Analytics</title>
+    <link rel="icon" href="./images/icons/icon.png" />
+
+    <!-- burger menu -->
+    <link rel="stylesheet" type="text/css" href="./public/css/reset.min.css" />
+    <link rel="stylesheet" type="text/css" href="./public/css/style.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./public/css/ionicon.min.css"
+    />
+    <!-- end -->
+
+    <!-- roboto 500 font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end -->
+
+    <!-- yantramanav 400 font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yantramanav&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end -->
+
+    <!-- montserrat 200 font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end -->
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <!-- end -->
+
+    <!-- internal css -->
+    <style>
+      .container-pri {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .header-pri {
+        animation: none;
+      }
+
+      @media (max-width: 485px) {
+        .header-pri {
+          animation: none;
+          background-repeat: no-repeat;
+          background-position-y: 55px;
+          width: 90%;
+          height: 10px;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          position: relative;
+        }
+      }
+
+      .animated-text,
+      .animated-text-tv,
+      .animated-text-mv {
+        display: none;
+      }
+
+      .view-more {
+        display: none;
+      }
+
+      .what-we-do-tv,
+      .what-we-do-mv {
+        margin-top: -40px;
+      }
+
+      .about-head-section {
+        /* background-color: red; */
+        width: 90%;
+        display: block;
+        margin: auto;
+        margin-bottom: 100px;
+      }
+
+      .why-triosco h1 {
+        font-size: 48px;
+        font-weight: lighter;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .why-triosco p span {
+        font-size: 18px;
+        font-weight: lighter;
+        font-family: "Yantramanav", sans-serif;
+      }
+
+      .our-mission {
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+
+      .our-mission h3 {
+        font-family: "Yantramanav", sans-serif;
+        font-size: 26px;
+      }
+
+      .our-mission h2 {
+        font-family: "Roboto", sans-serif;
+        font-size: 28px;
+        margin-top: 25px;
+        font-weight: lighter;
+      }
+
+      @media (max-width: 1300px) {
+        .our-mission {
+          text-align: left;
+          margin-top: 60px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .h1-banner-design {
+        font-family: "Roboto", sans-serif;
+        font-size: 48px;
+        font-weight: 100;
+        line-height: 60px;
+        padding: 40px;
+      }
+
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+      }
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+
+      /* For desktop: */
+      .col-1 {
+        width: 8.33%;
+      }
+
+      .col-2 {
+        width: 16.66%;
+      }
+
+      .col-3 {
+        width: 25%;
+      }
+
+      .col-4 {
+        width: 33.33%;
+      }
+
+      .col-5 {
+        width: 41.66%;
+      }
+
+      .col-6 {
+        width: 50%;
+      }
+
+      .col-7 {
+        width: 58.33%;
+      }
+
+      .col-8 {
+        width: 66.66%;
+      }
+
+      .col-9 {
+        width: 75%;
+      }
+
+      .col-10 {
+        width: 83.33%;
+      }
+
+      .col-11 {
+        width: 91.66%;
+      }
+
+      .col-12 {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
+      }
+
+      .quoteee {
+        background-image: url("./images/main/quotes.png");
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      .design-page {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+
+      .design-sec {
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-top: -50px;
+      }
+
+      @media (max-width: 420px) {
+        .design-page {
+          padding: 5px;
+        }
+
+        .design-sec {
+          padding: 10px;
+        }
+      }
+    </style>
+    <!-- end -->
+  </head>
+
+  <body>
+    <!-- loader -->
+    <div
+      class="loader-background"
+      style="
+        background-color: rgb(252, 252, 252);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      "
+      id="loader"
+    >
+      <img src="./images/main/loader.gif" alt="" id="loader" />
+    </div>
+    <!-- end -->
+
+    <!-- window -->
+    <div id="window">
+      <!-- container -->
+      <div class="container-pri">
+        <!-- header -->
+        <div class="header-pri">
+          <!-- navbar -->
+          <div class="navbar-pri">
+            <a href="index.html">
+              <img src="./images/icons/logo-dark.png" alt="" />
+            </a>
+            <ul id="navigation-menu">
+              <li class="navi"><a href="index.html">HOME</a></li>
+              <li class="navi"><a href="about.html">ABOUT</a></li>
+              <li class="dropdown-pri navi">
+                <a href="#" class="dropbtn-pri">SERVICES</a>
+                <div class="dropdown-content-pri">
+                  <a href="#" style="color: white">CREATE</a>
+                  <ul>
+                    <li>
+                      <a href="branding.html" style="color: gray">Branding</a>
+                    </li>
+                    <li>
+                      <a href="media&production.html" style="color: gray"
+                        >Media & Production</a
+                      >
+                    </li>
+                    <li>
+                      <a href="ecom&webdev.html" style="color: gray"
+                        >e-Com & Web Dev</a
+                      >
+                    </li>
+                  </ul>
+                  <a href="#" style="color: white">CONNECT</a>
+                  <ul>
+                    <li>
+                      <a href="research&consultancy.html" style="color: gray"
+                        >Research & Consultancy</a
+                      >
+                    </li>
+                    <li>
+                      <a href="marketing.html" style="color: gray">Marketing</a>
+                    </li>
+                    <li>
+                      <a
+                        href="marketplaceadvertisement.html"
+                        style="color: gray"
+                        >Marketplace Advertising</a
+                      >
+                    </li>
+                  </ul>
+                  <a href="#" style="color: white">TRANSCEND</a>
+                  <ul>
+                    <li>
+                      <a href="dataAnalytics.html" style="color: gray"
+                        >Data Analytics</a
+                      >
+                    </li>
+                    <li>
+                      <a href="operations.html" style="color: gray"
+                        >Operations</a
+                      >
+                    </li>
+                    <li>
+                      <a href="growthoptimization.html" style="color: gray"
+                        >Growth Optimization</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="navi"><a href="projects.html">PROJECTS</a></li>
+              <li class="navi"><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <!-- end -->
+
+          <!-- animated text -->
+          <h1 class="animated-text">
+            <div class="text-1">
+              <span class="inner-text-1">360° SOLUTIONS</span>
+              <span class="inner-text-1">DESIGN STUDIO</span>
+              <span class="inner-text-1">E-COMMERCE SOLUTION</span>
+              <span class="inner-text-1">DIGITAL MARKETING</span>
+            </div>
+            <br />
+            <div class="text-2">
+              <span class="inner-text-2"
+                >We Help You<br />
+                Shine Online</span
+              >
+              <span class="inner-text-2"
+                >Captivating<br />
+                Design Solutions</span
+              >
+              <span class="inner-text-2"
+                >A To Z Operation<br />
+                Solution</span
+              >
+              <span class="inner-text-2"
+                >Human Focused<br />
+                Marketing</span
+              >
+            </div>
+          </h1>
+          <!-- end -->
+
+          <!-- animated text mobile view-->
+          <h1 class="animated-text-mv">
+            <div class="text-1-mv">
+              <span class="inner-text-1-mv">360° SOLUTIONS</span>
+              <span class="inner-text-1-mv">DESIGN STUDIO</span>
+              <span class="inner-text-1-mv">E-COMMERCE SOLUTION</span>
+              <span class="inner-text-1-mv">DIGITAL MARKETING</span>
+            </div>
+            <br />
+            <div class="text-2-mv">
+              <span class="inner-text-2-mv"
+                >We Help<br />
+                You Shine<br />
+                Online</span
+              >
+              <span class="inner-text-2-mv"
+                >Captivating<br />
+                Design<br />
+                Solutions</span
+              >
+              <span class="inner-text-2-mv"
+                >A To Z<br />
+                Operation<br />
+                Solution</span
+              >
+              <span class="inner-text-2-mv"
+                >Human<br />
+                Focused<br />
+                Marketing</span
+              >
+            </div>
+          </h1>
+          <!-- end -->
+
+          <!-- button -->
+          <button class="view-more" role="button">VIEW MORE</button>
+          <!-- end -->
+        </div>
+        <!-- end -->
+      </div>
+      <!-- end -->
+
+      <!-- head materials -->
+      <div class="about-head-section">
+        <h1 class="h1-banner-design">
+          Data analytics assist you in adapting to an ever-changing market. We
+          determine your scope of development in order to carefully plan
+          sustained growth.
+        </h1>
+
+        <img src="./images/new/banners/Analytics.jpg" alt="" />
+      </div>
+      <!-- end -->
+
+      <!-- end -->
+
+      <!-- burger menu -->
+      <div class="header">
+        <section class="container">
+          <div class="wrapper">
+            <a href="index.html" class="brand"
+              ><img src="./images/icons/logo-dark.png" alt=""
+            /></a>
+            <button type="button" class="burger" id="burger">
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+            </button>
+            <span class="overlay" id="overlay"></span>
+            <nav class="navbar" id="navbar">
+              <ul class="menu">
+                <!-- temp -->
+                <a href="index.html" class="brand burger-triosco-logo"
+                  ><img src="./images/icons/logo-dark.png" alt=""
+                /></a>
+                <!-- temp -->
+                <li class="menu-item"><a href="index.html">HOME</a></li>
+                <li class="menu-item"><a href="about.html">ABOUT</a></li>
+                <li class="menu-item menu-item-child">
+                  <a href="#" data-toggle="sub-menu"
+                    >OUR SERVICES<i class="expand"></i
+                  ></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item">
+                      <a href="#" style="color: #f4bc49 !important">CREATE</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="branding.html">Branding</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="media&production.html">Media & Production</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="ecom&webdev.html">e-Com & Web Development</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" style="color: #f4bc49 !important">CONNECT</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="research&consultancy.html"
+                        >Research & Consultancy</a
+                      >
+                    </li>
+                    <li class="menu-item">
+                      <a href="marketing.html">Marketing</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="marketplaceadvertisement.html"
+                        >Marketplace Advertising</a
+                      >
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" style="color: #f4bc49 !important"
+                        >TRANSCEND</a
+                      >
+                    </li>
+                    <li class="menu-item">
+                      <a href="dataAnalytics.html">Data Analytics</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="operations.html">Operations</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="growthoptimization.html"
+                        >Growth & Optimization</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-child">
+                  <a href="projects.html">PROJECTS</a>
+                </li>
+                <li class="menu-item"><a href="contact.html">CONTACT</a></li>
+                <!-- social -->
+                <ul style="margin-left: 20px; margin-top: 10px">
+                  <li style="display: inline-block; padding-inline-end: 10px">
+                    <a href="https://www.facebook.com/TriosCo/" target="_blank"
+                      ><img
+                        src="./images/temp/Facebook.png"
+                        alt=""
+                        style="width: 26px"
+                    /></a>
+                  </li>
+                  <li style="display: inline-block; padding-inline-end: 10px">
+                    <a
+                      href="https://www.instagram.com/triosco_3/"
+                      target="_blank"
+                      ><img
+                        src="./images/temp/Instagram.png"
+                        alt=""
+                        style="width: 26px"
+                    /></a>
+                  </li>
+                  <li style="display: inline-block; padding-inline-end: 10px">
+                    <a
+                      href="https://www.linkedin.com/company/triosco/"
+                      target="_blank"
+                      ><img
+                        src="./images/temp/Linkedin.png"
+                        alt=""
+                        style="width: 26px"
+                    /></a>
+                  </li>
+                  <li style="display: inline-block; padding-inline-end: 10px">
+                    <a href="https://triosco.com/#" target="_blank"
+                      ><img
+                        src="./images/temp/Twitter.png"
+                        alt=""
+                        style="width: 26px"
+                    /></a>
+                  </li>
+                </ul>
+                <!-- social -->
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </div>
+      <!-- end -->
+
+      <!---------------------------------quoteeeeeeeeeeeeeeeeeeeee-------------->
+
+      <div class="row">
+        <div class="col-12 quoteee">
+          <h2>
+            “The design is not just what it looks like and feels like. The
+            design is how it works” — Steve Jobs.”
+          </h2>
+        </div>
+      </div>
+
+      <!-- our works -->
+      <div class="our-work">
+        <div class="title-our-work">
+          <h1>Our Work</h1>
+        </div>
+        <div class="row-1-our-work">
+          <div class="our-work-box box-1-our-work">
+            <a href="fabGourmet.html">
+              <img src="./images/projects/2-2.jpg" alt="" />
+            </a>
+            <h1>Fab Gourmet</h1>
+            <p>CONSULTING, DESIGN, MARKETING, WEBSITE</p>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <!-- form -->
+      <div class="form" data-aos="fade-right" data-aos-duration="2000">
+        <h1>Connect With Us Now!</h1>
+        <div class="usa">
+          <img src="./images/main/USA.jpg" alt="" />
+          <br />
+          <p>A: 27B Dubon Ct Farmingdale, NY 11735</p>
+          <br />
+          <p>E: hello@triosco.com</p>
+          <br />
+          <p>T: <a href="tel:+1-929-899-0503">+1-929-899-0503</a></p>
+        </div>
+        <div class="india">
+          <img src="./images/main/IND.jpg" alt="" />
+          <br />
+          <p>
+            A: Primarc Tower DN 36, Collegemore, Sector V, Kolkata, West
+            <span style="margin-left: 21px"
+              >Bengal 700091, 10th Floor, Room No. 1003.</span
+            >
+          </p>
+          <br />
+          <p>E: hello@triosco.com</p>
+          <br />
+          <p>T: <a href="tel:+91-912-392-5117">+91-912-392-5117</a></p>
+          <br />
+          <!-- <span>
+            <p><a href="tel:+91-967-490-4987">+91-967-490-4987</a></p>
+          </span> -->
+        </div>
+        <div class="contact">
+          <h2>Contact Us</h2>
+          <br />
+          <br />
+          <form method="POST" class="contact-form">
+            <input type="text" class="name" placeholder="Name" required />
+            <br />
+            <input type="email" class="email" placeholder="Email" required />
+            <br />
+            <input
+              type="text"
+              class="phone"
+              name="phoneNumber"
+              placeholder="Phone Number"
+              required
+            />
+            <br />
+            <input
+              type="text"
+              class="message"
+              placeholder="Message..."
+              required
+            />
+            <br />
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+      <!-- end -->
+
+      <!-- footer -->
+      <div class="footer" data-aos="fade-up" data-aos-duration="1000">
+        <div class="card">
+          <img src="./images/icons/logo-light.png" alt="" />
+          <p>Create | Connect | Transcend</p>
+          <div class="social">
+            <h1>Follow us</h1>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/TriosCo/" target="_blank"
+                  ><img
+                    src="./images/temp/Facebook.png"
+                    alt=""
+                    style="width: 36px"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/triosco_3/" target="_blank"
+                  ><img
+                    src="./images/temp/Instagram.png"
+                    alt=""
+                    style="width: 36px"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/triosco/"
+                  target="_blank"
+                  ><img
+                    src="./images/temp/Linkedin.png"
+                    alt=""
+                    style="width: 36px"
+                /></a>
+              </li>
+              <li>
+                <a href="https://triosco.com/#" target="_blank"
+                  ><img
+                    src="./images/temp/Twitter.png"
+                    alt=""
+                    style="width: 36px"
+                /></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-container">
+            <div class="our-services">
+              <h1>Our Services</h1>
+              <ul class="first-ul-footer">
+                <li><a href="branding.html">Branding</a></li>
+                <li><a href="media&production.html">Media & Production</a></li>
+                <li>
+                  <a href="ecom&webdev.html"
+                    >e-Commerce & <br />
+                    Web Development</a
+                  >
+                </li>
+                <li>
+                  <a href="research&consultancy.html">Research & Consultancy</a>
+                </li>
+              </ul>
+
+              <ul class="second-ul-footer">
+                <li><a href="marketing.html">Marketing</a></li>
+                <li>
+                  <a href="marketplaceadvertisement.html"
+                    >Marketplace Advertising</a
+                  >
+                </li>
+                <li style="margin-top: 4px">
+                  <a href="dataAnalytics.html">Data Analytics</a>
+                </li>
+                <li style="margin-top: -8px">
+                  <a href="operations.html">Operations</a>
+                </li>
+                <li style="margin-top: 5px">
+                  <a href="growthoptimization.html">Growth Optimization</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="other-links">
+              <h1>Other Links</h1>
+              <ul>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            Copyright © 2022, All Right Reserved
+            <a href="https://triosco.com/" target="_blank">TriosCo</a>
+          </p>
+        </div>
+      </div>
+      <!-- end -->
+    </div>
+    <!-- end -->
+  </body>
+
+  <script>
+    // loader
+    const myTimeout = setTimeout(myGreeting, 3000);
+
+    function myGreeting() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("window").style.display = "block";
+    }
+    // end
+
+    // testimonial
+    var indexValue = 0;
+    function slideShow() {
+      setTimeout(slideShow, 5000);
+      var x;
+      const reviews = document.getElementsByClassName("reviews");
+      for (x = 0; x < reviews.length; x++) {
+        reviews[x].style.display = "none";
+      }
+      indexValue++;
+      if (indexValue > reviews.length) {
+        indexValue = 1;
+      }
+      reviews[indexValue - 1].style.display = "block";
+    }
+    slideShow();
+    // end
+  </script>
+
+  <!-- other script file -->
+  <script defer src="./public/js/script.js"></script>
+  <!-- end -->
+
+  <!-- main script file -->
+  <script src="index.js"></script>
+  <!-- end -->
+</html>
