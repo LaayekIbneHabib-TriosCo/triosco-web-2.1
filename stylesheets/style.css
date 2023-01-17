@@ -797,7 +797,7 @@
   display: inline-block;
   border: 1px solid rgb(170, 170, 170);
   width: 29.5vw;
-  height: 22vw;
+  height: 35vh;
   padding-left: 3vw;
   padding-right: 3vw;
   padding-top: 2vw;
@@ -809,7 +809,7 @@
 
 .box img {
   width: 2vw;
-  margin-top: 3vw;
+  margin-top: 2vw;
   cursor: pointer;
 }
 
@@ -832,30 +832,6 @@
   border: none;
 }
 
-/* .box-1 .read-more-btn {
-  margin-top: 5.2vw;
-}
-
-.box-2 .read-more-btn {
-  margin-top: 3.2vw;
-}
-
-.box-3 .read-more-btn {
-  margin-top: 5.2vw;
-}
-
-.box-4 .read-more-btn {
-  margin-top: -1.5vw;
-}
-
-.box-5 .read-more-btn {
-  margin-top: -0.8vw;
-}
-
-.box-6 .read-more-btn {
-  margin-top: 5.3vw;
-} */
-
 .read-more-btn a {
   position: absolute;
   margin-top: -1.33vw;
@@ -866,25 +842,6 @@
   letter-spacing: 2px;
   font-size: 0.9vw;
 }
-
-/* .read-more-btn a:hover {
-  color: black;
-  text-decoration: none;
-} */
-
-/* .read-more-btn a::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 1.4px;
-  bottom: 0;
-  left: 0;
-  top: 14px;
-  background-color: black;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-} */
 
 .read-more-btn a:hover::before {
   transform: scaleX(1);
@@ -1258,7 +1215,7 @@
   display: inline-block;
   width: 90%;
   text-align: center;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 .row-2-our-work {
@@ -1266,7 +1223,7 @@
   width: 90%;
   margin-top: 25px;
   text-align: center;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 .row-3-our-work {
@@ -1274,7 +1231,7 @@
   width: 90%;
   margin-top: 25px;
   text-align: center;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 .our-work-box {
@@ -1809,127 +1766,52 @@
 
 /* about us */
 .about-us {
-  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
 }
 
-.about-us-card {
+.about-us .about-us-card {
   background-color: #f4bc49;
-  width: 62vw;
-  height: 45vw;
-  padding-left: 5vw;
-  padding-right: 15vw;
-  padding-top: 6vw;
-  font-size: 1.3vw;
+  margin: 25px;
+  padding: 100px;
+}
+
+.about-us .about-us-card h1 {
+  color: white;
   font-family: "Roboto", sans-serif;
-  color: #ffffff;
-  margin-left: 5vw;
+  font-size: 40px;
 }
 
-.about-us-card h1,
-h3,
-p {
-  font-weight: lighter;
-}
-
-.about-us-card h2 {
-  color: #ffffffab;
-  font-weight: lighter;
-}
-
-.about-us-card .read-more {
-  border: 1px solid #ffffff;
-  padding-right: 4vw;
-  padding-left: 4vw;
-  padding-top: 1.1vw;
-  padding-bottom: 1vw;
+.about-us .about-us-card p {
+  color: rgba(255, 255, 255, 0.7);
   font-family: "Roboto", sans-serif;
-  margin-top: 4vw;
-  color: #ffffff;
-  transition: 0.3s linear;
-  font-size: 1vw;
+  font-size: 25px;
+  line-height: 35px;
 }
 
-.about-us-card .read-more:hover {
-  color: black;
-  background-color: #ffffff;
+.about-us .about-us-card ul li {
+  list-style: none;
+  display: inline-block;
 }
 
-.triosco-video {
-  height: 45vw;
-  width: 25.2vw;
-  margin-top: -45vw;
-  margin-left: 69vw;
+.about-us .about-us-card ul li img {
+  width: 120px;
+  margin-bottom: 10px;
 }
 
-/* media queries */
-@media (max-width: 600px) {
-  .about-us {
-    display: none;
-  }
+.about-us .about-us-card .read-more-about {
+  border: 1px solid white;
+  padding: 10px;
+  color: white;
 }
 
-/* end */
-/* end */
-
-/* about us for mobile view */
-.about-us-mv {
-  display: none;
-  margin-bottom: 25px;
+.about-us .about-us-card button {
+  margin-top: 30px;
 }
 
-.about-us-card-mv {
-  background-color: #f4bc49;
-  width: 90vw;
-  height: 172vw;
-  padding-left: 12vw;
-  padding-right: 12vw;
-  padding-top: 10vw;
-  font-size: 2.8vw;
-  font-size: 4vw;
-  font-family: "Roboto", sans-serif;
-  color: #ffffff;
-  margin-left: 4.9vw;
+.about-us .triosco-video {
+  margin: 25px;
 }
-
-.about-us-card-mv h2 {
-  color: #ffffffab;
-}
-
-.about-us-card-mv .read-more-mv {
-  border: 1px solid #ffffff;
-  padding-right: 8vw;
-  padding-left: 8vw;
-  padding-top: 2.2vw;
-  padding-bottom: 2vw;
-  font-family: "Roboto", sans-serif;
-  margin-top: 6vw;
-  color: #ffffff;
-  transition: 0.3s linear;
-  font-size: 4vw;
-}
-
-.about-us-card-mv .read-more-mv:hover {
-  color: black;
-  background-color: #ffffff;
-}
-
-.triosco-video-mv {
-  width: 90vw;
-  height: 172vw;
-  text-align: center;
-  display: block;
-  margin: auto;
-  margin-top: 10vw;
-}
-
-/* media queries */
-@media (max-width: 600px) {
-  .about-us-mv {
-    display: block;
-  }
-}
-
-/* end */
 /* end */
 
 /* brands */
@@ -2705,7 +2587,7 @@ p {
   height: 6vh;
   padding: 10px;
   padding-top: 13px;
-  font-style: italic;
+  padding-bottom: 23px;
   background: hsla(40, 89%, 62%, 1);
   background: linear-gradient(
     360deg,
@@ -2727,11 +2609,13 @@ p {
 
 .new-cct h1 {
   font-size: 2vw;
+  font-weight: 600;
 }
 
 .new-cct img {
   padding-left: 10px;
-  width: 35px;
+  padding-top: 10px;
+  width: 45px;
 }
 
 .row-1-tv .new-cct h1 {
@@ -2758,29 +2642,9 @@ p {
   font-size: 6vw;
 }
 
-@media all and (min-width: 600px) {
-  .about-us-card {
-    overflow: scroll;
-  }
-
-  .about-us-card ul li {
-    display: inline-block;
-    list-style: none;
-  }
-
-  .about-us-card ul li img {
-    width: 150px;
-  }
-}
-
 .footer-container .our-services {
   display: flex;
-  /* background-color: red; */
 }
-
-/* .footer-container .our-services h1 {
-  padding-left: 100px;
-} */
 
 .first-ul-footer {
   margin-left: -250px;

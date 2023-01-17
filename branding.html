@@ -76,73 +76,23 @@
         }
       }
 
-      .animated-text,
-      .animated-text-tv,
-      .animated-text-mv {
-        display: none;
-      }
-
-      .view-more {
-        display: none;
-      }
-
-      .what-we-do-tv,
-      .what-we-do-mv {
-        margin-top: -40px;
-      }
-
       .about-head-section {
-        /* background-color: red; */
         width: 90%;
         display: block;
         margin: auto;
         margin-bottom: 100px;
       }
 
-      .why-triosco h1 {
-        font-size: 48px;
-        font-weight: lighter;
-        font-family: "Roboto", sans-serif;
-      }
-
-      .why-triosco p span {
-        font-size: 18px;
-        font-weight: lighter;
-        font-family: "Yantramanav", sans-serif;
-      }
-
-      .our-mission {
-        text-align: left;
-        margin-top: 30px;
-        margin-bottom: 20px;
-      }
-
-      .our-mission h3 {
-        font-family: "Yantramanav", sans-serif;
-        font-size: 26px;
-      }
-
-      .our-mission h2 {
-        font-family: "Roboto", sans-serif;
-        font-size: 28px;
-        margin-top: 25px;
-        font-weight: lighter;
-      }
-
-      @media (max-width: 1300px) {
-        .our-mission {
-          text-align: left;
-          margin-top: 60px;
-          margin-bottom: 10px;
-        }
-      }
-
       .h1-banner-design {
         font-family: "Roboto", sans-serif;
-        font-size: 48px;
+        font-size: 40px;
         font-weight: 100;
         line-height: 60px;
         padding: 40px;
+      }
+
+      .h1-banner-design span {
+        font-weight: 800;
       }
 
       [class*="col-"] {
@@ -156,7 +106,6 @@
         display: block;
       }
 
-      /* For desktop: */
       .col-1 {
         width: 8.33%;
       }
@@ -206,13 +155,12 @@
       }
 
       @media only screen and (max-width: 768px) {
-        /* For mobile phones: */
         [class*="col-"] {
           width: 100%;
         }
       }
 
-      .quoteee {
+      .quote {
         background-image: url("./images/main/quotes.png");
         text-align: center;
         padding-top: 80px;
@@ -222,27 +170,6 @@
         background-size: contain;
         margin-top: 50px;
         margin-bottom: 50px;
-      }
-
-      .design-page {
-        padding-left: 60px;
-        padding-right: 60px;
-      }
-
-      .design-sec {
-        padding-left: 60px;
-        padding-right: 60px;
-        margin-top: -50px;
-      }
-
-      @media (max-width: 420px) {
-        .design-page {
-          padding: 5px;
-        }
-
-        .design-sec {
-          padding: 10px;
-        }
       }
     </style>
     <!-- end -->
@@ -340,74 +267,6 @@
             </ul>
           </div>
           <!-- end -->
-
-          <!-- animated text -->
-          <h1 class="animated-text">
-            <div class="text-1">
-              <span class="inner-text-1">360° SOLUTIONS</span>
-              <span class="inner-text-1">DESIGN STUDIO</span>
-              <span class="inner-text-1">E-COMMERCE SOLUTION</span>
-              <span class="inner-text-1">DIGITAL MARKETING</span>
-            </div>
-            <br />
-            <div class="text-2">
-              <span class="inner-text-2"
-                >We Help You<br />
-                Shine Online</span
-              >
-              <span class="inner-text-2"
-                >Captivating<br />
-                Design Solutions</span
-              >
-              <span class="inner-text-2"
-                >A To Z Operation<br />
-                Solution</span
-              >
-              <span class="inner-text-2"
-                >Human Focused<br />
-                Marketing</span
-              >
-            </div>
-          </h1>
-          <!-- end -->
-
-          <!-- animated text mobile view-->
-          <h1 class="animated-text-mv">
-            <div class="text-1-mv">
-              <span class="inner-text-1-mv">360° SOLUTIONS</span>
-              <span class="inner-text-1-mv">DESIGN STUDIO</span>
-              <span class="inner-text-1-mv">E-COMMERCE SOLUTION</span>
-              <span class="inner-text-1-mv">DIGITAL MARKETING</span>
-            </div>
-            <br />
-            <div class="text-2-mv">
-              <span class="inner-text-2-mv"
-                >We Help<br />
-                You Shine<br />
-                Online</span
-              >
-              <span class="inner-text-2-mv"
-                >Captivating<br />
-                Design<br />
-                Solutions</span
-              >
-              <span class="inner-text-2-mv"
-                >A To Z<br />
-                Operation<br />
-                Solution</span
-              >
-              <span class="inner-text-2-mv"
-                >Human<br />
-                Focused<br />
-                Marketing</span
-              >
-            </div>
-          </h1>
-          <!-- end -->
-
-          <!-- button -->
-          <button class="view-more" role="button">VIEW MORE</button>
-          <!-- end -->
         </div>
         <!-- end -->
       </div>
@@ -415,11 +274,7 @@
 
       <!-- head materials -->
       <div class="about-head-section">
-        <h1 class="h1-banner-design">
-          Branding is about creating your own story. It starts with a
-          well-crafted 'vision' that speaks for you and represents your brand
-          values.
-        </h1>
+        <h1 class="h1-banner-design"><span>Branding:</span> Tell your story</h1>
 
         <img src="./images/new/banners/Branding.jpg" alt="" />
       </div>
@@ -552,10 +407,75 @@
       </div>
       <!-- end -->
 
-      <!---------------------------------quoteeeeeeeeeeeeeeeeeeeee-------------->
+      <!-- about the service -->
+      <div class="service-section">
+        <div class="service-section-left">
+          <img src="./images/new/MicrosoftTeams-image (11).png" alt="" />
+          <p>
+            Branding creates your unique identity and conveys your story to your
+            target audience. It starts with a well-crafted 'vision' that speaks
+            for you and represents your brand values to build a trusting
+            relationship with your clientele.
+          </p>
+        </div>
+        <div class="service-section-right">
+          <h1>Services</h1>
+          <ul>
+            <li>Logo Design</li>
+            <li>Brand Guide</li>
+            <li>Brand Stationery</li>
+            <li>Company Profile</li>
+            <li>Product Catalogue</li>
+            <li>Packaging</li>
+            <li>User Manuals</li>
+            <li>Event branding</li>
+            <li>Print Media Design</li>
+          </ul>
+        </div>
+      </div>
+      <!-- end -->
 
+      <style>
+        .service-section {
+          display: flex;
+          justify-content: space-evenly;
+          margin: 25px;
+        }
+
+        .service-section-left {
+          width: 500px;
+          font-size: 20px;
+          font-family: "Roboto", sans-serif;
+          margin-right: 25px;
+        }
+
+        .service-section-left img {
+          width: 200px;
+        }
+
+        .service-section-right {
+          font-size: 20px;
+          font-family: "Roboto", sans-serif;
+          margin-left: 25px;
+        }
+
+        .service-section-right ul li {
+          list-style: inside;
+        }
+
+        @media all and (max-width: 800px) {
+          .service-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      </style>
+
+      <!-- qoute -->
       <div class="row">
-        <div class="col-12 quoteee">
+        <div class="col-12 quote">
           <h2>
             “The design is not just what it looks like and feels like. The
             design is how it works” — Steve Jobs.”
@@ -563,22 +483,69 @@
         </div>
       </div>
 
-      <!-- our works -->
-      <div class="our-work">
-        <div class="title-our-work">
-          <h1>Our Work</h1>
-        </div>
-        <div class="row-1-our-work">
-          <div class="our-work-box box-1-our-work">
-            <a href="aynadecors.html">
-              <img src="./images/new/Ayna.jpg" alt="" />
-            </a>
+      <!-- our work -->
+      <div class="our-work-section">
+        <h1 class="our-work-title">Our Work</h1>
+        <ul>
+          <li>
+            <a href="fabGourmet.html"
+              ><img
+                src="./images/new/new-mockups/MicrosoftTeams-image (10).png"
+                alt=""
+            /></a>
+            <h1>Fab Gourmet</h1>
+            <p>MEDIA & PRODUCTION, MARKETING & MORE</p>
+          </li>
+          <li>
+            <a href="aynadecors.html"
+              ><img
+                src="./images/new/new-mockups/MicrosoftTeams-image (3).png"
+                alt=""
+            /></a>
             <h1>Ayna Decors</h1>
-            <p>BRANDING</p>
-          </div>
-        </div>
+            <p>GROWTH OPTIMIZATION, BRANDING & MORE</p>
+          </li>
+          <li>
+            <a href="masuliving.html"
+              ><img
+                src="./images/new/new-mockups/MicrosoftTeams-image (6).png"
+                alt=""
+            /></a>
+            <h1>Masu Living</h1>
+            <p>WEBSITE & BRANDING</p>
+          </li>
+        </ul>
       </div>
       <!-- end -->
+
+      <style>
+        .our-work-section {
+          margin-bottom: 100px;
+        }
+
+        .our-work-section .our-work-title {
+          font-family: "Roboto", sans-serif;
+          font-size: 60px;
+        }
+
+        .our-work-title {
+          width: 86%;
+          display: block;
+          margin: auto;
+        }
+
+        .our-work-section ul {
+          display: flex;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+          font-family: "Roboto", sans-serif;
+          font-weight: 100;
+        }
+
+        .our-work-section img {
+          width: 450px;
+        }
+      </style>
 
       <!-- form -->
       <div class="form" data-aos="fade-right" data-aos-duration="2000">
@@ -611,7 +578,7 @@
           </span> -->
         </div>
         <div class="contact">
-          <h2>Contact Us</h2>
+          <h2 style="margin-top: 40px">Contact Us</h2>
           <br />
           <br />
           <form method="POST" class="contact-form">
@@ -747,7 +714,7 @@
 
   <script>
     // loader
-    const myTimeout = setTimeout(myGreeting, 3000);
+    const myTimeout = setTimeout(myGreeting, 0);
 
     function myGreeting() {
       document.getElementById("loader").style.display = "none";
