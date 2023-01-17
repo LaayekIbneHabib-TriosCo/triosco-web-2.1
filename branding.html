@@ -77,10 +77,9 @@
       }
 
       .about-head-section {
-        width: 90%;
+        width: 94%;
         display: block;
         margin: auto;
-        margin-bottom: 100px;
       }
 
       .h1-banner-design {
@@ -88,7 +87,6 @@
         font-size: 40px;
         font-weight: 100;
         line-height: 60px;
-        padding: 40px;
       }
 
       .h1-banner-design span {
@@ -280,6 +278,19 @@
       </div>
       <!-- end -->
 
+      <style>
+        .h1-banner-design span {
+          font-weight: 900;
+          font-family: "Roboto", sans-serif;
+        }
+
+        .h1-banner-design {
+          font-weight: 100;
+          font-family: "Yantramanav", sans-serif;
+          margin-bottom: 50px;
+        }
+      </style>
+
       <!-- end -->
 
       <!-- burger menu -->
@@ -440,6 +451,7 @@
           display: flex;
           justify-content: space-evenly;
           margin: 25px;
+          /* background-color: red; */
         }
 
         .service-section-left {
@@ -451,6 +463,8 @@
 
         .service-section-left img {
           width: 200px;
+          margin-left: 330px;
+          margin-bottom: -50px;
         }
 
         .service-section-right {
@@ -521,6 +535,8 @@
       <style>
         .our-work-section {
           margin-bottom: 100px;
+          margin: 100px;
+          /* background-color: red; */
         }
 
         .our-work-section .our-work-title {
@@ -529,21 +545,33 @@
         }
 
         .our-work-title {
-          width: 86%;
           display: block;
           margin: auto;
+          /* background-color: aqua; */
         }
 
         .our-work-section ul {
           display: flex;
-          justify-content: space-evenly;
-          flex-wrap: wrap;
+          justify-content: space-between;
+          /* flex-wrap: wrap; */
           font-family: "Roboto", sans-serif;
           font-weight: 100;
+          gap: 25px;
+        }
+
+        @media all and (max-width: 900px) {
+          .our-work-section ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            gap: 50px;
+          }
         }
 
         .our-work-section img {
-          width: 450px;
+          width: 500px;
         }
       </style>
 
