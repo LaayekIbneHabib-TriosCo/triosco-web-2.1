@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* loader */
 #loader {
   position: absolute;

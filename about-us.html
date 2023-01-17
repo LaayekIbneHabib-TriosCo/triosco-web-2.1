@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="icon" href="./images/icons/icon.png" />
+
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- end -->
+
+    <!-- burger menu -->
+    <link rel="stylesheet" type="text/css" href="./public/css/reset.min.css" />
+    <link rel="stylesheet" type="text/css" href="./public/css/style.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./public/css/ionicon.min.css"
+    />
+    <!-- end -->
+
+    <!-- roboto 500 font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end -->
+
+    <!-- yantramanav 400 font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yantramanav&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end -->
+
+    <!-- montserrat 200 font -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end -->
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="stylesheets/" />
+    <!-- end -->
+
+    <style>
+      /* window */
+      #window {
+        display: none;
+      }
+
+      /* end */
+
+      /* scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+
+      /* end */
+
+      /* container */
+      .container-pri {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+
+      /* end */
+
+      /* header */
+      .header-pri {
+        animation: changeBg 12s infinite;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 85px;
+        width: 100%;
+        height: 600px;
+        height: 48vw;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+      }
+      /* media queries */
+      @media (max-width: 1000px) {
+        .header-pri {
+          height: 600px;
+        }
+      }
+
+      @media (max-width: 485px) {
+        .header-pri {
+          animation: changeBgMv 12s infinite;
+          background-repeat: no-repeat;
+          background-position-y: 55px;
+          width: 100%;
+          height: 750px;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          position: relative;
+        }
+      }
+      /* navbar */
+      .navbar-pri {
+        position: fixed;
+        background-color: white;
+        height: 55px;
+        height: 68px;
+        width: 100%;
+        margin-top: 0px;
+        z-index: 1;
+      }
+
+      .navbar-pri ul .navi {
+        display: inline-block;
+        padding-inline-end: 42px;
+        padding-top: 20px;
+      }
+
+      .navbar-pri ul .navi a {
+        position: relative;
+        color: black;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 2px;
+        font-size: 14px;
+      }
+
+      .active-pri {
+        text-decoration: underline;
+      }
+
+      .navi a:hover {
+        color: #000;
+        text-decoration: underline;
+      }
+
+      .navi a::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 1.6px;
+        bottom: 0;
+        left: 0;
+        top: 14.5px;
+        background-color: #000;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+
+      .navi a:hover::before {
+        transform: scaleX(1);
+      }
+
+      .navbar-pri img {
+        float: left;
+        width: 120px;
+        cursor: pointer;
+        padding-top: 5px;
+        /* margin-left: 10px; */
+        margin-left: 60px;
+      }
+
+      /* end */
+
+      /* navbar for mobile view */
+      .header {
+        display: none;
+      }
+
+      .burger-triosco-logo img {
+        margin-left: 10px;
+        margin-bottom: 20px;
+      }
+
+      .brand img {
+        width: 120px;
+      }
+
+      .menu .menu-item a {
+        transition: 0.3s;
+        color: black !important;
+      }
+
+      .menu-item a:hover {
+        color: #f4bc49 !important;
+      }
+
+      /* media queries */
+      @media (max-width: 992px) {
+        .navbar-pri ul {
+          display: none;
+        }
+
+        .header {
+          display: block;
+        }
+      }
+
+      /* end */
+      /* end */
+
+      /* dropdown for services */
+      .dropbtn-pri {
+        font-size: 16px;
+        border: none;
+      }
+
+      .dropdown-pri .dropbtn-pri::before {
+        height: 1.4px;
+        width: 100%;
+        left: 1%;
+      }
+
+      .dropdown-pri {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-pri {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content-pri {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: -25px;
+        background-color: black;
+        min-width: 160px;
+        z-index: 1;
+        text-align: left;
+        width: 250px;
+        overflow-y: scroll;
+      }
+
+      .dropdown-content-pri a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content-pri a::before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 0px;
+        bottom: 0;
+        left: 0;
+        top: 15px;
+        background-color: #000;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+
+      .dropdown-content-pri a:hover {
+        background-color: rgb(40, 40, 40);
+      }
+
+      .dropdown-pri:hover .dropdown-content-pri {
+        display: block;
+      }
+
+      /* end */
+
+      .abouttop {
+        margin-top: 13vh;
+      }
+
+      .abouttxt {
+        text-align: center;
+
+        margin-top: -15px;
+      }
+
+      .abouttxt p span {
+        font-family: "Roboto";
+        font-style: normal;
+        padding: 6px 25px;
+        background-color: #ffffff;
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 125%;
+        border-radius: 10px 10px 0px 0px;
+      }
+
+      .txt h2 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 125%;
+        /* identical to box height, or 50px */
+
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-feature-settings: "cpsp" on;
+
+        color: #292f36;
+      }
+      @media all and (min-width: 600px) {
+        .desktop {
+          width: 70%;
+          margin-top: 20px;
+          padding-top: 80px;
+          padding-left: 100px;
+          padding-right: 100px;
+          padding-bottom: 100px;
+        }
+      }
+
+      .txtx .pc {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 100;
+        font-size: 36px;
+        line-height: 50px;
+        /* identical to box height, or 78% */
+
+        display: flex;
+        align-items: center;
+
+        color: #1a1a1a;
+      }
+
+      @media all and (max-width: 765px) {
+        .t {
+          padding: 20px;
+        }
+      }
+
+      @media all and (max-width: 765px) {
+        .row-t {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
+        .col-t {
+          width: 25%;
+          padding-top: 120px;
+        }
+
+        .col-t1 {
+          width: 50%;
+        }
+      }
+
+      .pc {
+        font-size: 32px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Code by Bhawan Team TriosCo -->
+
+    <div class="abouttop" style="display: flex; justify-content: center">
+      <img src="./images/imagesnew/AboutUsbanner.jpg" />
+    </div>
+
+    <div class="abouttxt">
+      <p>
+        <span><strong style="font-weight: 600">About</strong> Us</span>
+      </p>
+    </div>
+
+    <div
+      class="container desktop"
+      style="background: rgba(244, 189, 72, 0.05); border-radius: 20px"
+    >
+      <div class="row" style="align-items: center; padding: 20px">
+        <div class="col-md-4" style="width: 40%">
+          <img
+            width="80%"
+            height="50%"
+            src="./images/imagesnew/Asset 2@4x 1.png"
+          />
+        </div>
+        <div class="col-md-8 txt" style="width: 60%">
+          <h2>CREATE</h2>
+          <p>
+            Bringing the representation of yourself and your brand to life. We
+            embark on a journey to CREATE.
+          </p>
+        </div>
+      </div>
+      <div class="row" style="align-items: center; padding: 20px">
+        <div class="col-md-6 txt" style="width: 60%">
+          <h2>Connect</h2>
+          <p>
+            We strive to know the true YOU, and help you CONNECT with the right
+            audience at the right time!
+          </p>
+        </div>
+        <div class="col-md-6" style="width: 40%">
+          <img
+            style="float: right"
+            width="80%"
+            height="50%"
+            src="./images/imagesnew/Asset 3@4x.png"
+          />
+        </div>
+      </div>
+      <div class="row" style="align-items: center; padding: 20px">
+        <div class="col-md-4" style="width: 40%">
+          <img
+            width="80%"
+            height="50%"
+            src="./images/imagesnew/Asset 1@4x.png"
+          />
+        </div>
+        <div class="col-md-8 txt" style="width: 60%">
+          <h2>Transcend</h2>
+          <p>
+            With the help of the latest DIGITAL HACKS, let’s start the journey
+            to TRANSCEND beyond limits.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- after create connect transcend -->
+
+    <div
+      class="container"
+      style="text-align: center; margin-top: 80px; margin-bottom: 80px"
+    >
+      <div class="row row-t">
+        <div class="col-md-2"></div>
+        <div class="col-md-2 col-t">
+          <img src="./images/imagesnew/left-bracker.png" />
+        </div>
+        <div class="col-md-4 col-t1">
+          <p class="pc">
+            <span><strong>Our</strong> Mission</span>
+          </p>
+          <div
+            class="txtx"
+            style="
+              z-index: 9999;
+              position: relative;
+
+              padding-top: 20px;
+              padding-bottom: 20px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <img
+              width="20%;"
+              style="padding-top: 20px; padding-bottom: 20px"
+              src="./images/imagesnew/coma.png"
+            />
+            <p>“To Simplify your business and help you shine online.”</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-t">
+          <img src="./images/imagesnew/right-bracker.png" />
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+
+    <div
+      class="container"
+      style="
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      "
+    >
+      <div class="row">
+        <p class="pc">
+          <span><strong>Our</strong> Team</span>
+        </p>
+        <div class="col-md-12 txtx"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            25+ EXPERIENCED PEOPLE IN THEIR INDIVIDUAL FIELDS TO DELIVERY THE
+            BEST FOR OUR CLIENTS!<br />
+
+            WE SPEAK 6 LANGUAGES ENGLISH, GERMAN, SPANISH, GUJARATI, HINDI &
+            BENGALI!
+          </p>
+        </div>
+      </div>
+      <div
+        class="row"
+        style="
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          margin-top: 40px;
+          width: 80%;
+        "
+      >
+        <div class="col-md-2 t" style="display: flex; justify-content: center">
+          <img src="./images/imagesnew/Design-Experts.png.png" width="50%" ; />
+        </div>
+        <div class="col-md-2 t" style="display: flex; justify-content: center">
+          <img
+            src="./images/imagesnew/Marketing-Experts.png (1).png"
+            width="50%"
+          />
+        </div>
+        <div class="col-md-2 t" style="display: flex; justify-content: center">
+          <img
+            src="./images/imagesnew/Web-Development-Experts.png.png"
+            width="50%"
+          />
+        </div>
+        <div class="col-md-2 t" style="display: flex; justify-content: center">
+          <img
+            src="./images/imagesnew/Marketing-Experts.png (1).png"
+            width="50%"
+          />
+        </div>
+        <div class="col-md-2 t" style="display: flex; justify-content: center">
+          <img
+            src="./images/imagesnew/Operations-Experts.png.png"
+            width="50%"
+          />
+        </div>
+        <div class="col-md-2 t" style="display: flex; justify-content: center">
+          <img
+            src="./images/imagesnew/Content-Creations-1.png.png"
+            width="50%"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- lasttttttttttt -->
+
+    <div
+      class="container-fluid"
+      style="
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: rgba(244, 189, 72, 0.1);
+      "
+    >
+      <div class="row">
+        <p class="pc">
+          <span><strong>Our</strong> Partners</span>
+        </p>
+        <div class="col-md-12 txtx"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            WE HAVE PARTNERED WITH THE BEST TO PROVIDE ON-TIME SERVICE TO ALL
+            OUR CLIENTS
+          </p>
+        </div>
+      </div>
+      <div
+        class="row"
+        style="
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          margin-top: 40px;
+        "
+      >
+        <div class="col-md-3 t" style="display: flex; justify-content: center">
+          <img src="./images/imagesnew/Amazon-Partner.png" width="50%" ; />
+        </div>
+        <div class="col-md-3 t" style="display: flex; justify-content: center">
+          <img src="./images/imagesnew/Google-Partner.png" width="50%" />
+        </div>
+        <div class="col-md-3 t" style="display: flex; justify-content: center">
+          <img src="./images/imagesnew/Shopify.png" width="50%" />
+        </div>
+        <div class="col-md-3 t" style="display: flex; justify-content: center">
+          <img src="./images/imagesnew/Meta-partner.png" width="50%" />
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <script>
+    // loader
+    const myTimeout = setTimeout(myGreeting, 0);
+
+    function myGreeting() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("window").style.display = "block";
+    }
+    // end
+
+    // testimonial
+    var indexValue = 0;
+    function slideShow() {
+      setTimeout(slideShow, 5000);
+      var x;
+      const reviews = document.getElementsByClassName("reviews");
+      for (x = 0; x < reviews.length; x++) {
+        reviews[x].style.display = "none";
+      }
+      indexValue++;
+      if (indexValue > reviews.length) {
+        indexValue = 1;
+      }
+      reviews[indexValue - 1].style.display = "block";
+    }
+    slideShow();
+    // end
+  </script>
+
+  <!-- other script file -->
+  <script defer src="./public/js/script.js"></script>
+  <!-- end -->
+
+  <!-- animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- end -->
+
+  <!-- main script file -->
+  <script src="index.js"></script>
+  <!-- end -->
+</html>
