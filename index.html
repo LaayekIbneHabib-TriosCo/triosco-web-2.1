@@ -1148,10 +1148,32 @@
       </div>
       <!-- end -->
 
+      <style>
+        @media all and (max-width: 1300px) {
+          .about-us .about-us-card {
+            background-color: #f4bc49;
+            margin: 25px;
+            padding: 50px;
+          }
+        }
+
+        @media all and (max-width: 900px) {
+          .about-us {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .about-us .about-us-card ul li img {
+            width: 80px;
+            margin-bottom: 10px;
+          }
+        }
+      </style>
+
       <!-- testimonial -->
       <div
         class="testimonial"
-        style="overflow-y: scroll; height: 400px"
+        style="overflow-y: scroll; height: 400px; margin-bottom: -10px"
         data-aos="fade-right"
         data-aos-duration="2000"
       >
@@ -1296,7 +1318,12 @@
       <!-- end -->
 
       <!-- footer -->
-      <div class="footer" data-aos="fade-up" data-aos-duration="1000">
+      <div
+        class="footer"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        style="margin-top: -25px"
+      >
         <div class="card">
           <img src="./images/icons/logo-light.png" alt="" />
           <p>Create | Connect | Transcend</p>
