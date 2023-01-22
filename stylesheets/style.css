@@ -1784,6 +1784,7 @@ body {
   background-color: #f4bc49;
   margin: 25px;
   padding: 100px;
+  margin-left: 1px;
 }
 
 .about-us .about-us-card h1 {
@@ -1821,6 +1822,7 @@ body {
 
 .about-us .triosco-video {
   margin: 25px;
+  margin-left: 1px;
 }
 /* end */
 
@@ -2665,5 +2667,9 @@ body {
   margin-top: 50px;
   margin-left: 50px;
   line-height: 22px;
+}
+
+.our-work-section ul li h1 {
+  font-weight: 500;
 }
 /* end */

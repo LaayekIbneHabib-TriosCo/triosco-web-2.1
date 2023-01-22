@@ -165,7 +165,10 @@
         padding-bottom: 80px;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
+        /* SHREYA'S CODE START */
+        /* background-size: contain; */
+        background-size: 100px;
+        /* SHREYA'S CODE END */
         margin-top: 50px;
         margin-bottom: 50px;
       }
@@ -218,7 +221,7 @@
                     </li>
                     <li>
                       <a href="ecom&webdev.html" style="color: white"
-                        >eCom & Web Dev</a
+                        >eCommerce & Website</a
                       >
                     </li>
                   </ul>
@@ -274,7 +277,10 @@
 
       <!-- head materials -->
       <div class="about-head-section">
-        <h1 class="h1-banner-design"><span>Branding:</span> Tell your story</h1>
+        <h1 class="h1-banner-design">
+          <!-- <span>Branding:</span> -->
+          <span>Tell your story</span>
+        </h1>
 
         <img src="./images/new/banners/Branding.jpg" alt="" />
       </div>
@@ -389,7 +395,7 @@
                   </li>
                   <li style="display: inline-block; padding-inline-end: 10px">
                     <a
-                      href="https://www.instagram.com/triosco_3/"
+                      href="https://www.instagram.com/triosco_media/"
                       target="_blank"
                       ><img
                         src="./images/temp/Instagram.png"
@@ -490,6 +496,18 @@
             align-items: center;
             justify-content: center;
           }
+          /* SHREYA'S CODE START */
+          .service-section-left {
+            width: 100%;
+          }
+          .service-section-left img {
+            width: 80px;
+          }
+          .service-section-left p {
+            display: block;
+            padding-bottom: 80px;
+          }
+          /* SHREYA'S CODE END */
         }
       </style>
 
@@ -499,12 +517,13 @@
           <h2>
             “The design is not just what it looks like and feels like. The
             design is how it works.” <br />
-            <span style="font-weight: 500">— Steve Jobs</span>
+            <span style="font-weight: 500">- Steve Jobs</span>
           </h2>
         </div>
       </div>
 
       <!-- our work -->
+      <!-- SHREYA'S CODE START -->
       <div class="our-work-section">
         <h1 class="our-work-title">Our Work</h1>
         <ul>
@@ -515,35 +534,35 @@
                 alt=""
             /></a>
             <h1>Fab Gourmet</h1>
-            <p>MEDIA & PRODUCTION, MARKETING & MORE</p>
+            <p>BRANDING, MARKETING & MORE</p>
           </li>
           <li>
-            <a href="peptid.html"
+            <a href="aynadecors.html"
               ><img
-                src="./images/new/new-mockups/MicrosoftTeams-image (8).png"
+                src="./images/new/new-mockups/MicrosoftTeams-image (3).png"
                 alt=""
             /></a>
-            <h1>Peptid+</h1>
-            <p>MARKETPLACE ADVERTISING, E-COMMERCE & MORE</p>
+            <h1>Ayna Decors</h1>
+            <p>BRANDING, WEBSITE & MORE</p>
           </li>
           <li>
-            <a href="moreish.html"
-              ><img
-                src="./images/new/new-mockups/MicrosoftTeams-image (12).png"
-                alt=""
+            <a href="masuliving.html"
+              ><img src="./images/Mockups/11.jpg" alt=""
             /></a>
-            <h1>Moreish</h1>
-            <p>MEDIA & PRODUCTION, MARKETING & MORE</p>
+            <h1>Masu Living</h1>
+            <p>WEBSITE & BRANDING</p>
           </li>
         </ul>
       </div>
       <!-- end -->
 
+      <!-- SHREYA'S CODE END -->
       <style>
         .our-work-section {
           margin-bottom: 100px;
           margin: 100px;
           /* background-color: red; */
+          margin-top: -100px;
         }
 
         .our-work-section .our-work-title {
@@ -581,6 +600,61 @@
           width: 500px;
         }
       </style>
+
+      <!-- SHREYA'S CODE START -->
+      <!-- our works for mobile view -->
+      <div
+        class="our-work-mv"
+        id="our-work-mv"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
+        <div class="title-our-work-mv">
+          <h1>Our Work</h1>
+        </div>
+
+        <div class="row-1-our-work-mv">
+          <div class="our-work-box-mv box-1-our-work-mv">
+            <a href="fabGourmet.html">
+              <img src="./images/Mockups/12.jpg" alt="" />
+            </a>
+            <h1>Fab Gourmet</h1>
+            <p>BRANDING, MARKETING & MORE</p>
+          </div>
+        </div>
+
+        <div class="row-2-our-work-mv">
+          <div class="our-work-box-mv box-2-our-work-mv">
+            <a href="aynadecors.html">
+              <img src="./images/Mockups/Ayna (1).jpg" alt="" />
+            </a>
+            <h1>Ayna Decors</h1>
+            <p>BRANDING, WEBSITE & MORE</p>
+          </div>
+        </div>
+
+        <div class="row-3-our-work-mv">
+          <div class="our-work-box-mv box-3-our-work-mv">
+            <a href="masuliving.html">
+              <img src="./images/Mockups/11.jpg" alt="" />
+            </a>
+            <h1>Masu Living</h1>
+            <p>WEBSITE & BRANDING</p>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        @media (max-width: 600px) {
+          .our-work-section {
+            display: none;
+          }
+          .our-work-mv {
+            display: block;
+          }
+        }
+      </style>
+      <!-- SHREYA'S CODE END -->
 
       <!-- form -->
       <div class="form" data-aos="fade-right" data-aos-duration="2000">
@@ -738,6 +812,23 @@
       </div>
       <!-- end -->
     </div>
+    <!-- SHREYA'S CODE START -->
+    <style>
+      @media (max-width: 600px) {
+        .our-services h1 {
+          white-space: nowrap;
+        }
+      }
+      @media (max-width: 1200px) {
+        .our-services {
+          text-align: left;
+        }
+        .our-services h1 {
+          text-align: left;
+        }
+      }
+    </style>
+    <!-- SHREYA'S CODE END -->
     <!-- end -->
   </body>
 

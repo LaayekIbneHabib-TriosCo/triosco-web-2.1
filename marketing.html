@@ -76,73 +76,21 @@
         }
       }
 
-      .animated-text,
-      .animated-text-tv,
-      .animated-text-mv {
-        display: none;
-      }
-
-      .view-more {
-        display: none;
-      }
-
-      .what-we-do-tv,
-      .what-we-do-mv {
-        margin-top: -40px;
-      }
-
       .about-head-section {
-        /* background-color: red; */
-        width: 90%;
+        width: 94%;
         display: block;
         margin: auto;
-        margin-bottom: 100px;
-      }
-
-      .why-triosco h1 {
-        font-size: 48px;
-        font-weight: lighter;
-        font-family: "Roboto", sans-serif;
-      }
-
-      .why-triosco p span {
-        font-size: 18px;
-        font-weight: lighter;
-        font-family: "Yantramanav", sans-serif;
-      }
-
-      .our-mission {
-        text-align: left;
-        margin-top: 30px;
-        margin-bottom: 20px;
-      }
-
-      .our-mission h3 {
-        font-family: "Yantramanav", sans-serif;
-        font-size: 26px;
-      }
-
-      .our-mission h2 {
-        font-family: "Roboto", sans-serif;
-        font-size: 28px;
-        margin-top: 25px;
-        font-weight: lighter;
-      }
-
-      @media (max-width: 1300px) {
-        .our-mission {
-          text-align: left;
-          margin-top: 60px;
-          margin-bottom: 10px;
-        }
       }
 
       .h1-banner-design {
         font-family: "Roboto", sans-serif;
-        font-size: 48px;
+        font-size: 40px;
         font-weight: 100;
         line-height: 60px;
-        padding: 40px;
+      }
+
+      .h1-banner-design span {
+        font-weight: 800;
       }
 
       [class*="col-"] {
@@ -156,7 +104,6 @@
         display: block;
       }
 
-      /* For desktop: */
       .col-1 {
         width: 8.33%;
       }
@@ -206,43 +153,24 @@
       }
 
       @media only screen and (max-width: 768px) {
-        /* For mobile phones: */
         [class*="col-"] {
           width: 100%;
         }
       }
 
-      .quoteee {
+      .quote {
         background-image: url("./images/main/quotes.png");
         text-align: center;
         padding-top: 80px;
         padding-bottom: 80px;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
+        /* SHREYA'S CODE START */
+        /* background-size: contain; */
+        background-size: 100px;
+        /* SHREYA'S CODE END */
         margin-top: 50px;
         margin-bottom: 50px;
-      }
-
-      .design-page {
-        padding-left: 60px;
-        padding-right: 60px;
-      }
-
-      .design-sec {
-        padding-left: 60px;
-        padding-right: 60px;
-        margin-top: -50px;
-      }
-
-      @media (max-width: 420px) {
-        .design-page {
-          padding: 5px;
-        }
-
-        .design-sec {
-          padding: 10px;
-        }
       }
     </style>
     <!-- end -->
@@ -273,62 +201,64 @@
           <!-- navbar -->
           <div class="navbar-pri">
             <a href="index.html">
-              <img src="./images/icons/logo-dark.png" alt="" />
-            </a>
+              <img src="./images/icons/logo-dark.png" alt=""
+            /></a>
             <ul id="navigation-menu">
               <li class="navi"><a href="index.html">HOME</a></li>
               <li class="navi"><a href="about.html">ABOUT</a></li>
               <li class="dropdown-pri navi">
                 <a href="#" class="dropbtn-pri">SERVICES</a>
                 <div class="dropdown-content-pri">
-                  <a href="#" style="color: white">CREATE</a>
+                  <a href="#" style="color: gray">CREATE</a>
                   <ul>
                     <li>
-                      <a href="branding.html" style="color: gray">Branding</a>
+                      <a href="branding.html" style="color: white">Branding</a>
                     </li>
                     <li>
-                      <a href="media&production.html" style="color: gray"
+                      <a href="media&production.html" style="color: white"
                         >Media & Production</a
                       >
                     </li>
                     <li>
-                      <a href="ecom&webdev.html" style="color: gray"
-                        >e-Com & Web Dev</a
+                      <a href="ecom&webdev.html" style="color: white"
+                        >eCommerce & Website</a
                       >
                     </li>
                   </ul>
-                  <a href="#" style="color: white">CONNECT</a>
+                  <a href="#" style="color: gray">CONNECT</a>
                   <ul>
                     <li>
-                      <a href="research&consultancy.html" style="color: gray"
+                      <a href="research&consultancy.html" style="color: white"
                         >Research & Consultancy</a
                       >
                     </li>
                     <li>
-                      <a href="marketing.html" style="color: gray">Marketing</a>
+                      <a href="marketing.html" style="color: white"
+                        >Marketing</a
+                      >
                     </li>
                     <li>
                       <a
                         href="marketplaceadvertisement.html"
-                        style="color: gray"
+                        style="color: white"
                         >Marketplace Advertising</a
                       >
                     </li>
                   </ul>
-                  <a href="#" style="color: white">TRANSCEND</a>
+                  <a href="#" style="color: gray">TRANSCEND</a>
                   <ul>
                     <li>
-                      <a href="dataAnalytics.html" style="color: gray"
+                      <a href="dataAnalytics.html" style="color: white"
                         >Data Analytics</a
                       >
                     </li>
                     <li>
-                      <a href="operations.html" style="color: gray"
+                      <a href="operations.html" style="color: white"
                         >Operations</a
                       >
                     </li>
                     <li>
-                      <a href="growthoptimization.html" style="color: gray"
+                      <a href="growthoptimization.html" style="color: white"
                         >Growth Optimization</a
                       >
                     </li>
@@ -340,74 +270,6 @@
             </ul>
           </div>
           <!-- end -->
-
-          <!-- animated text -->
-          <h1 class="animated-text">
-            <div class="text-1">
-              <span class="inner-text-1">360° SOLUTIONS</span>
-              <span class="inner-text-1">DESIGN STUDIO</span>
-              <span class="inner-text-1">E-COMMERCE SOLUTION</span>
-              <span class="inner-text-1">DIGITAL MARKETING</span>
-            </div>
-            <br />
-            <div class="text-2">
-              <span class="inner-text-2"
-                >We Help You<br />
-                Shine Online</span
-              >
-              <span class="inner-text-2"
-                >Captivating<br />
-                Design Solutions</span
-              >
-              <span class="inner-text-2"
-                >A To Z Operation<br />
-                Solution</span
-              >
-              <span class="inner-text-2"
-                >Human Focused<br />
-                Marketing</span
-              >
-            </div>
-          </h1>
-          <!-- end -->
-
-          <!-- animated text mobile view-->
-          <h1 class="animated-text-mv">
-            <div class="text-1-mv">
-              <span class="inner-text-1-mv">360° SOLUTIONS</span>
-              <span class="inner-text-1-mv">DESIGN STUDIO</span>
-              <span class="inner-text-1-mv">E-COMMERCE SOLUTION</span>
-              <span class="inner-text-1-mv">DIGITAL MARKETING</span>
-            </div>
-            <br />
-            <div class="text-2-mv">
-              <span class="inner-text-2-mv"
-                >We Help<br />
-                You Shine<br />
-                Online</span
-              >
-              <span class="inner-text-2-mv"
-                >Captivating<br />
-                Design<br />
-                Solutions</span
-              >
-              <span class="inner-text-2-mv"
-                >A To Z<br />
-                Operation<br />
-                Solution</span
-              >
-              <span class="inner-text-2-mv"
-                >Human<br />
-                Focused<br />
-                Marketing</span
-              >
-            </div>
-          </h1>
-          <!-- end -->
-
-          <!-- button -->
-          <button class="view-more" role="button">VIEW MORE</button>
-          <!-- end -->
         </div>
         <!-- end -->
       </div>
@@ -416,13 +278,30 @@
       <!-- head materials -->
       <div class="about-head-section">
         <h1 class="h1-banner-design">
-          Marketing is the game changer that strategically works in a cohesive
-          manner to promote your brand identity and creates your global
-          personality. We don’t market brands, we support dreams.
+          <!-- <span>Marketing: </span> -->
+          <span>Know your WHY & Establish yourself globally.</span>
         </h1>
-        <img src="./images/new/banners/marketing.jpg" alt="" />
+
+        <img src="./images/Banners/marketing.jpg" alt="" />
       </div>
       <!-- end -->
+
+      <style>
+        .h1-banner-design span {
+          font-weight: 900;
+          font-family: "Roboto", sans-serif;
+          font-size: 50px;
+          letter-spacing: 1px;
+        }
+
+        .h1-banner-design {
+          font-weight: 100;
+          font-family: "Yantramanav", sans-serif;
+          margin-bottom: 50px;
+          font-size: 50px;
+          letter-spacing: -2px;
+        }
+      </style>
 
       <!-- end -->
 
@@ -516,7 +395,7 @@
                   </li>
                   <li style="display: inline-block; padding-inline-end: 10px">
                     <a
-                      href="https://www.instagram.com/triosco_3/"
+                      href="https://www.instagram.com/triosco_media/"
                       target="_blank"
                       ><img
                         src="./images/temp/Instagram.png"
@@ -551,33 +430,246 @@
       </div>
       <!-- end -->
 
-      <!---------------------------------quoteeeeeeeeeeeeeeeeeeeee-------------->
+      <!-- about the service -->
+      <div class="service-section">
+        <div class="service-section-left">
+          <img src="./images/new/MicrosoftTeams-image (11).png" alt="" />
+          <p>
+            Marketing is the game changer that strategically works in a cohesive
+            manner to promote your brand identity and creates your global
+            personality. It’s a continuous creative process of building brand
+            awareness. We don’t market brands, we support dreams.
+          </p>
+        </div>
+        <div class="service-section-right">
+          <h1>Services</h1>
+          <ul>
+            <li>Social Media Management</li>
+            <li>Performance Marketing</li>
+            <li>Search Engine Optimization</li>
+            <li>Search Engine Marketing</li>
+            <li>Influencer Marketing</li>
+            <li>Email marketing</li>
+            <li>Content Marketing</li>
+            <li>Broadcast Marketing</li>
+            <li>Print Marketing</li>
+          </ul>
+        </div>
+      </div>
+      <!-- end -->
 
+      <style>
+        .service-section {
+          display: flex;
+          justify-content: space-evenly;
+          margin: 25px;
+          /* background-color: red; */
+        }
+
+        .service-section-left {
+          width: 500px;
+          font-size: 20px;
+          font-family: "Roboto", sans-serif;
+          margin-right: 25px;
+        }
+
+        .service-section-left img {
+          width: 200px;
+          margin-left: 330px;
+          margin-bottom: -50px;
+        }
+
+        .service-section-right {
+          font-size: 20px;
+          font-family: "Roboto", sans-serif;
+          margin-left: 25px;
+        }
+
+        .service-section-right ul li {
+          list-style: inside;
+        }
+
+        @media all and (max-width: 800px) {
+          .service-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+          /* SHREYA'S CODE START */
+          .service-section-left {
+            width: 100%;
+          }
+          .service-section-left img {
+            width: 80px;
+          }
+          .service-section-left p {
+            display: block;
+            padding-bottom: 80px;
+          }
+          /* SHREYA'S CODE END */
+        }
+      </style>
+
+      <!-- qoute -->
       <div class="row">
-        <div class="col-12 quoteee">
+        <div class="col-12 quote">
           <h2>
-            “The best marketing doesn’t feel like marketing.” - Tom Fishburne.
+            “People don’t buy what you do, they buy why you do it.” <br />
+            <span style="font-weight: 500">— Simon Sinek </span>
           </h2>
         </div>
       </div>
 
-      <!-- our works -->
-      <div class="our-work">
-        <div class="title-our-work">
+      <!-- our work -->
+      <div class="our-work-section">
+        <h1 class="our-work-title">Our Work</h1>
+        <ul>
+          <li>
+            <a href="radon.html"
+              ><img src="./images/Mockups/radon (1).jpg" alt=""
+            /></a>
+            <h1>Radon</h1>
+            <p>MARKETING, E-COMMERCE & MORE</p>
+          </li>
+          <li>
+            <a href="moreish.html"
+              ><img src="./images/Mockups/Moreish (1).jpg" alt=""
+            /></a>
+            <h1>Moreish</h1>
+            <p>PHOTOSHOOT, MARKETING & MORE</p>
+          </li>
+          <li>
+            <a href="peptid.html"
+              ><img src="./images/Mockups/Peptid+.jpg" alt=""
+            /></a>
+            <h1>Peptid+</h1>
+            <p>E-COMMERCE, PHOTOSHOOT & MORE</p>
+          </li>
+          <li>
+            <a href="fabGourmet.html"
+              ><img src="./images/Mockups/12.jpg" alt=""
+            /></a>
+            <h1>Fab Gourmet</h1>
+            <p>BRANDING, MARKETING & MORE</p>
+          </li>
+        </ul>
+      </div>
+      <!-- end -->
+
+      <style>
+        .our-work-section {
+          margin-bottom: 100px;
+          margin: 100px;
+          margin-top: -100px;
+        }
+
+        .our-work-section .our-work-title {
+          font-family: "Roboto", sans-serif;
+          font-size: 60px;
+        }
+
+        .our-work-title {
+          display: block;
+          margin: auto;
+          /* background-color: aqua; */
+        }
+
+        .our-work-section ul {
+          /* display: flex; */
+          /* SHREYA'S CSS CODE START */
+          display: grid;
+          grid-auto-flow: row;
+          grid-template-columns: repeat(3, 1fr) !important;
+          grid-template-rows: repeat(2, 1fr) !important;
+          justify-content: space-between;
+          /* SHREYA'S CSS CODE END */
+          justify-content: space-between;
+          /* flex-wrap: wrap; */
+          font-family: "Roboto", sans-serif;
+          font-weight: 100;
+          gap: 25px;
+        }
+
+        @media all and (max-width: 900px) {
+          .our-work-section ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            gap: 50px;
+          }
+        }
+
+        .our-work-section img {
+          width: 500px;
+        }
+      </style>
+      <!-- SHREYA'S CODE START -->
+      <!-- our works for mobile view -->
+      <div
+        class="our-work-mv"
+        id="our-work-mv"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
+        <div class="title-our-work-mv">
           <h1>Our Work</h1>
         </div>
 
-        <div class="row-1-our-work">
-          <div class="our-work-box box-1-our-work">
+        <div class="row-1-our-work-mv">
+          <div class="our-work-box-mv box-1-our-work-mv">
+            <a href="radon.html">
+              <img src="./images/Mockups/radon (1).jpg" alt="" />
+            </a>
+            <h1>Radon</h1>
+            <p>MARKETING, E-COMMERCE & MORE</p>
+          </div>
+        </div>
+
+        <div class="row-2-our-work-mv">
+          <div class="our-work-box-mv box-2-our-work-mv">
             <a href="moreish.html">
-              <img src="./images/new/Moreish.jpg" alt="" />
+              <img src="./images/Mockups/Moreish (1).jpg" alt="" />
             </a>
             <h1>Moreish</h1>
-            <p>SOCIAL MEDIA MARKETING</p>
+            <p>PHOTOSHOOT, MARKETING & MORE</p>
+          </div>
+        </div>
+
+        <div class="row-3-our-work-mv">
+          <div class="our-work-box-mv box-3-our-work-mv">
+            <a href="peptid.html">
+              <img src="./images/Mockups/Peptid+.jpg" alt="" />
+            </a>
+            <h1>Peptid+</h1>
+            <p>E-COMMERCE, PHOTOSHOOT & MORE</p>
+          </div>
+        </div>
+
+        <div class="row-3-our-work-mv">
+          <div class="our-work-box-mv box-3-our-work-mv">
+            <a href="fabGourmet.html">
+              <img src="./images/Mockups/12.jpg" alt="" />
+            </a>
+            <h1>Fab Gourmet</h1>
+            <p>BRANDING, MARKETING & MORE</p>
           </div>
         </div>
       </div>
-      <!-- end -->
+
+      <style>
+        @media (max-width: 600px) {
+          .our-work-section {
+            display: none;
+          }
+          .our-work-mv {
+            display: block;
+          }
+        }
+      </style>
+      <!-- SHREYA'S CODE END -->
 
       <!-- form -->
       <div class="form" data-aos="fade-right" data-aos-duration="2000">
@@ -610,7 +702,7 @@
           </span> -->
         </div>
         <div class="contact">
-          <h2>Contact Us</h2>
+          <h2 style="margin-top: 40px">Contact Us</h2>
           <br />
           <br />
           <form method="POST" class="contact-form">
@@ -656,7 +748,9 @@
                 /></a>
               </li>
               <li>
-                <a href="https://www.instagram.com/triosco_3/" target="_blank"
+                <a
+                  href="https://www.instagram.com/triosco_media/"
+                  target="_blank"
                   ><img
                     src="./images/temp/Instagram.png"
                     alt=""
@@ -669,14 +763,6 @@
                   target="_blank"
                   ><img
                     src="./images/temp/Linkedin.png"
-                    alt=""
-                    style="width: 36px"
-                /></a>
-              </li>
-              <li>
-                <a href="https://triosco.com/#" target="_blank"
-                  ><img
-                    src="./images/temp/Twitter.png"
                     alt=""
                     style="width: 36px"
                 /></a>
@@ -734,7 +820,7 @@
         </div>
         <div class="copyright">
           <p>
-            Copyright © 2022, All Right Reserved
+            Copyright © 2023, All Right Reserved
             <a href="https://triosco.com/" target="_blank">TriosCo</a>
           </p>
         </div>
